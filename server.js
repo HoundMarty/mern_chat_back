@@ -19,7 +19,8 @@ const server = require('http').createServer(app);
 const PORT = 5001;
 const io = require('socket.io')(server, {
     cors: {
-        origin: ['http://localhost:3000',"https://pwachat-api.onrender.com"],
+        //http://localhost:3000
+        origin: "https://pwachat.onrender.com",
         methods: ['GET', 'POST']
     }
 })
